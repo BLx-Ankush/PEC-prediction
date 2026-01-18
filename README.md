@@ -35,25 +35,46 @@ pec-demand-forecasting/
 
 ## 🚀 Quick Start
 
-### 1. Install Dependencies
+### Option A: Interactive Menu (Recommended)
+```bash
+python menu.py
+# Follow the on-screen menu for all operations
+# Option 15: Advanced Data Generator Panel
+```
+
+### Option B: Command Line
+
+#### 1. Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### 2. Generate Synthetic Data
+#### 2. Generate Synthetic Data
 ```bash
+# Quick generation (default 20 PINs)
 python src/data_generator.py
+
+# OR use Data Generator Panel for full control
+python data_generator_panel.py
 ```
 
-### 3. Train the Model
+#### 3. Train the Model
 ```bash
 python src/train_model.py
 ```
 
-### 4. Make Predictions
+#### 4. Make Predictions
 ```bash
 python src/predict.py --pincode 562157 --date 2026-03-15
 ```
+
+### 🎛️ Data Generator Panel
+**NEW:** Full control over dataset generation!
+- Add/Edit/Delete PIN codes
+- Manage holidays
+- Bulk import locations
+- Custom date ranges
+- See [PANEL_README.md](PANEL_README.md) for details
 
 ## 📊 Key Features
 

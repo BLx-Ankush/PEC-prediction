@@ -1,0 +1,51 @@
+pincode,district,state,center_type,base_footfall
+110001,Central Delhi,Delhi,Urban,180
+110002,North Delhi,Delhi,Urban,175
+110003,East Delhi,Delhi,Urban,170
+110004,West Delhi,Delhi,Urban,165
+110005,South Delhi,Delhi,Urban,185
+400001,Mumbai City,Maharashtra,Urban,220
+400002,Mumbai Suburban,Maharashtra,Urban,210
+400003,Mumbai South,Maharashtra,Urban,215
+560001,Bangalore Urban,Karnataka,Urban,200
+560002,Bangalore South,Karnataka,Urban,195
+560003,Bangalore North,Karnataka,Urban,190
+600001,Chennai,Tamil Nadu,Urban,190
+600002,Chennai South,Tamil Nadu,Urban,185
+700001,Kolkata,West Bengal,Urban,175
+700002,Kolkata North,West Bengal,Urban,170
+500001,Hyderabad,Telangana,Urban,185
+500002,Hyderabad South,Telangana,Urban,180
+411001,Pune,Maharashtra,Urban,165
+411002,Pune South,Maharashtra,Urban,160
+380001,Ahmedabad,Gujarat,Urban,170
+380002,Ahmedabad East,Gujarat,Urban,165
+302001,Jaipur,Rajasthan,Urban,155
+302002,Jaipur South,Rajasthan,Urban,150
+226001,Lucknow,Uttar Pradesh,Urban,160
+226002,Lucknow East,Uttar Pradesh,Urban,155
+160001,Chandigarh,Chandigarh,Urban,140
+682001,Ernakulam,Kerala,Urban,135
+800001,Patna,Bihar,Urban,125
+751001,Khordha,Odisha,Urban,115
+641001,Coimbatore,Tamil Nadu,Urban,145
+530001,Visakhapatnam,Andhra Pradesh,Urban,130
+562157,Bangalore Rural,Karnataka,Rural,85
+562158,Bangalore Rural South,Karnataka,Rural,80
+431001,Aurangabad,Maharashtra,Semi-Urban,110
+431002,Aurangabad North,Maharashtra,Semi-Urban,105
+784001,Sonitpur,Assam,Semi-Urban,95
+784002,Sonitpur East,Assam,Semi-Urban,90
+361001,Jamnagar,Gujarat,Semi-Urban,100
+361002,Jamnagar South,Gujarat,Semi-Urban,95
+342001,Jodhpur,Rajasthan,Semi-Urban,105
+492001,Raipur,Chhattisgarh,Urban,140
+781001,Kamrup,Assam,Urban,120
+462001,Bhopal,Madhya Pradesh,Urban,135
+201001,Ghaziabad,Uttar Pradesh,Urban,150
+121001,Faridabad,Haryana,Semi-Urban,110
+201301,Noida,Uttar Pradesh,Urban,155
+122001,Gurgaon,Haryana,Urban,160
+700091,Kolkata South,West Bengal,Urban,165
+400051,Mumbai Central,Maharashtra,Urban,200
+560017,Bangalore East,Karnataka,Urban,185

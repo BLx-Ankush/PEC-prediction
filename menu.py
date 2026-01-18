@@ -30,6 +30,7 @@ def print_menu():
     print()
     print("  DATA GENERATION & PROCESSING:")
     print("    1️⃣  Generate Synthetic PEC Footfall Data")
+    print("    🎛️  DATA GENERATOR PANEL (Full Control)")
     print("    2️⃣  Engineer Features from Raw Data")
     print()
     print("  MODEL TRAINING & EVALUATION:")
@@ -55,6 +56,7 @@ def print_menu():
     print("    13 Check System Status")
     print()
     print("    14 🔬 Validate Model Robustness (For Jury Presentation)")
+    print("    15 🎛️  Open Data Generator Panel (Advanced)")
     print()
     print("    0️⃣  Exit")
     print()
@@ -65,6 +67,9 @@ def generate_data():
     print_header()
     print("🔄 GENERATING SYNTHETIC PEC FOOTFALL DATA...")
     print("=" * 70)
+    print()
+    print("💡 TIP: For full control over data generation, use option 15")
+    print("   (Data Generator Panel) to customize PIN codes, holidays, etc.")
     print()
     
     try:
@@ -584,6 +589,34 @@ def validate_robustness():
     
     input("\n\nPress Enter to return to main menu...")
 
+def open_data_generator_panel():
+    """Open the advanced data generator panel"""
+    print_header()
+    print("🎛️  LAUNCHING DATA GENERATOR PANEL...")
+    print("=" * 70)
+    print()
+    
+    try:
+        # Import and run the panel
+        import subprocess
+        import sys
+        
+        # Run the panel in the same process
+        from data_generator_panel import DataGeneratorPanel
+        panel = DataGeneratorPanel()
+        panel.main_menu()
+        
+    except ImportError as e:
+        print(f"❌ Error: data_generator_panel.py not found")
+        print(f"   Make sure data_generator_panel.py is in the project root")
+    except Exception as e:
+        print(f"❌ Error: {e}")
+        import traceback
+        traceback.print_exc()
+    
+    # When panel exits, return to main menu
+    input("\n\nPress Enter to return to main menu...")
+
 def main():
     """Main menu loop"""
     
@@ -591,7 +624,7 @@ def main():
         print_header()
         print_menu()
         
-        choice = input("Enter your choice (0-14): ").strip()
+        choice = input("Enter your choice (0-15): ").strip()
         
         if choice == '0':
             print_header()
@@ -642,9 +675,12 @@ def main():
         elif choice == '14':
             validate_robustness()
         
+        elif choice == '15':
+            open_data_generator_panel()
+        
         else:
             print()
-            print("❌ Invalid choice. Please enter a number between 0 and 14.")
+            print("❌ Invalid choice. Please enter a number between 0 and 15.")
             input("\nPress Enter to continue...")
 
 if __name__ == "__main__":

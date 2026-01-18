@@ -466,8 +466,13 @@ def main():
                                     # Load features
                                     features_df = pd.read_csv('data/processed/pec_features.csv')
                                     
-                                    # Prepare data
-                                    feature_cols = [col for col in features_df.columns if col not in ['date', 'footfall', 'pincode']]
+                                    # Prepare data - exclude string columns (they're already encoded)
+                                    exclude_cols = [
+                                        'date', 'footfall',  # Target and date
+                                        'pincode', 'district', 'state', 'center_type',  # String columns (already encoded)
+                                        'day_name',  # Redundant with day_of_week
+                                    ]
+                                    feature_cols = [col for col in features_df.columns if col not in exclude_cols]
                                     X = features_df[feature_cols]
                                     y = features_df['footfall']
                                     
